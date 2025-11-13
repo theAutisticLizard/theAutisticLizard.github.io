@@ -665,6 +665,19 @@ img {
     max-width: 100%;
     height: auto;
 }
+/* FIX ESPECÍFICO PARA POEMAS EN GRID - ESPACIO DESIGUAL */
+.poems-page .cards {
+    align-items: start; /* ¡ESTO ES CLAVE! */
+}
+
+.poem-card {
+    height: auto !important;
+}
+
+/* Opcional: Asegura consistencia */
+.poems-grid {
+    grid-template-rows: auto; /* Elimina filas fijas */
+}
 
 /* Para móviles muy pequeños */
 @media (max-width: 480px) {
