@@ -171,44 +171,53 @@ main {
 
 /* REEMPLAZA los estilos actuales de poemas por esto */
 .poem-card {
-    background: #F8FBF7;
-    border-radius: 20px;
-    padding: 3rem 2.5rem;
-    box-shadow: 0 10px 40px rgba(26, 36, 23, 0.08);
-    border: 2px solid #E8F0E5;
+    background: #FEFEFE;
+    border-radius: 4px;
+    padding: 2.5rem;
+    box-shadow: 
+        0 1px 3px rgba(0,0,0,0.02),
+        0 8px 24px rgba(26, 36, 23, 0.06);
+    border: 1px solid #F0F0F0;
     position: relative;
+    transition: all 0.3s ease;
 }
 
-.poem-card::after {
-    content: ""❝"";
+.poem-card::before {
+    content: "";
     position: absolute;
-    top: 1.5rem;
-    left: 2rem;
-    font-size: 4rem;
-    color: #ABC8A2;
-    opacity: 0.3;
-    font-family: serif;
+    top: 8px;
+    left: 8px;
+    right: 8px;
+    bottom: -8px;
+    background: rgba(171, 200, 162, 0.1);
+    border-radius: 4px;
+    z-index: -1;
+    transition: all 0.3s ease;
+}
+
+.poem-card:hover::before {
+    bottom: -12px;
+    background: rgba(171, 200, 162, 0.15);
 }
 
 .poem-card h2 {
     color: #174E4F;
-    font-size: 1.7rem;
-    margin-bottom: 2rem;
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
     text-align: center;
-    font-weight: 300;
+    font-weight: 500;
     font-style: italic;
 }
 
 .poem-content p {
-    font-size: 1.15rem;
-    line-height: 1.9;
+    font-size: 1.1rem;
+    line-height: 1.8;
     color: #1A2417;
     white-space: pre-line;
     margin: 0;
     text-align: center;
     font-family: 'Georgia', serif;
 }
-
 /* Posts */
 .post {
     max-width: 700px;
