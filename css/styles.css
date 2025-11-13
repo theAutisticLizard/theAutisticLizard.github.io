@@ -171,47 +171,35 @@ main {
 
 /* REEMPLAZA los estilos actuales de poemas por esto */
 .poem-card {
-    background: #FDF6E3;
-    border-radius: 2px;
+    background: #FFFFFF;
+    border-radius: 12px;
     padding: 2.5rem;
-    box-shadow: 
-        0 2px 8px rgba(0,0,0,0.1),
-        inset 0 0 0 1px #E8DCC5,
-        inset 0 0 50px rgba(0,0,0,0.03);
-    border: 1px solid #E8DCC5;
-    position: relative;
-    font-family: 'Georgia', serif;
+    box-shadow: 0 4px 20px rgba(26, 36, 23, 0.08);
+    border-left: 5px solid #ABC8A2;
+    transition: all 0.3s ease;
 }
 
-.poem-card::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(90deg, transparent 98%, rgba(0,0,0,0.03) 100%);
-    pointer-events: none;
+.poem-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 30px rgba(26, 36, 23, 0.12);
 }
 
 .poem-card h2 {
-    color: #5D4037;
-    font-size: 1.4rem;
+    color: #1A2417;
+    font-size: 1.5rem;
     margin-bottom: 1.5rem;
-    text-align: center;
-    font-weight: 400;
-    font-style: italic;
-    border-bottom: 1px solid #D7CCC8;
-    padding-bottom: 0.8rem;
+    text-align: left;
+    font-weight: 600;
 }
 
 .poem-content p {
     font-size: 1.1rem;
-    line-height: 1.8;
-    color: #4E342E;
+    line-height: 1.7;
+    color: #1A2417;
     white-space: pre-line;
     margin: 0;
-    text-align: center;
+    text-align: left;
+    font-family: 'Georgia', serif;
 }
 /* Posts */
 .post {
