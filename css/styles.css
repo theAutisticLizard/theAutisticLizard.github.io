@@ -200,6 +200,7 @@ main {
     margin: 0;
     text-align: left;
     font-family: 'Georgia', serif;
+    white-space: normal;
 }
 /* Posts */
 .post {
