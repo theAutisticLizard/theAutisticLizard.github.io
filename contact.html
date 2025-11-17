@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - The Autistic Lizard</title>
+    <link rel="stylesheet" href="https://theautisticlizard.in/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="page-wrapper">
+
+    <!-- NAV -->
+    <header class="nav">
+        <div class="nav-inner">
+            <div class="logo">
+                <img src="img/logo3.png" alt="The Autistic Lizard" class="logo-img">
+            </div>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="poems.html">Poems</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- CONTACT -->
+    <main class="home">
+        <div class="home-card">
+            <h2 class="home-title">Contact <span>Me</span></h2>
+            
+            <p class="home-text">
+                If you'd like to talk, share your opinion, or ask something,
+                feel free to send me a message. I read everything.
+            </p>
+
+            <form class="contact-form" action="https://formspree.io/f/xwpwgrgz" method="POST">
+                <input type="hidden" name="_format" value="json" />
+                
+                <div class="form-group">
+                    <label class="form-label">Your Name</label>
+                    <input type="text" name="name" placeholder="Your name" class="form-input" required>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">Email</label>
+                    <input type="email" name="email" placeholder="your@email.com" class="form-input" required>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">Message</label>
+                    <textarea name="message" placeholder="Write your message here..." class="form-textarea" required></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-submit">Send Message</button>
+            </form>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>© 2025 Theautisticlizard. All rights reserved.</p>
+    </footer>
+
+</div>
+
+</body>
+</html>
